@@ -33,6 +33,7 @@
     "options_page" : "options.html",
     "permissions": [
         "tabs",
+        "background",
         "http://*/",
         "https://*/"
     ]

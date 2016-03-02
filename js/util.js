@@ -53,15 +53,8 @@ var getHtmlObject = function(sourceUrl) {
 // Chromeクリックイベントの発火により画像をエクスポートする
 function exportImage(image_url_from_extension) {
     chrome.tabs.create({
-      url: "https://wish-list-yuzataku.c9users.io/upload_from_extension"
+      url: "https://wish-list-yuzataku.c9users.io/upload_from_extension?url="+image_url_from_extension
     });
-
-    // index.htmlからタグを取得
-    var img_url = document.getElementById("img_url");
-    // テキストノードの作成
-    var text_url = document.createTextNode(image_url_from_extension);
-    // タグの位置にテキストノードを追加
-    img_url.appendChild(text_url);
 }
 
 // Chromeクリックイベントの発火により画像をダウンロードする
