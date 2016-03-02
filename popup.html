@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>i wish extention</title>
+		<link rel="stylesheet" href="css/popup.css" type="text/css">
+	</head>
+
+	<body>
+
+		<!-- タイトル&結果表示 -->
+		<h2> i wish extention </h2>
+		<p id="current_url">URL : </p>
+		<p id="num_of_images"></p>
+
+		<h4> ※ choose only one image if you export </h4>
+
+		<!-- 候補画像一覧表示 -->
+		<h3>＜候補画像一覧＞</h3>
+		<div id="candidates">
+		</div>
+
+
+		<!-- ボタン -->
+		<div>
+			<div>
+				<p id="status"></p>
+			</div>
+			<div>
+				<div><input type="submit" id="start_export" value="want it!"
+					style="color: #333;
+					background-color: #fff;
+					border-color: #fff;
+					display: inline-block;
+					padding: 6px 12px;
+					margin-bottom: 0;
+					font-size: 14px;
+					font-weight: normal;
+					line-height: 1.42857143;
+					text-align: center;
+					white-space: nowrap;
+					vertical-align: middle;
+					-ms-touch-action: manipulation;
+							touch-action: manipulation;
+					cursor: pointer;
+					-webkit-user-select: none;
+						 -moz-user-select: none;
+							-ms-user-select: none;
+									user-select: none;
+					background-image: none;
+					border: 1px solid #3CA43A;
+					border-radius: 4px;
+					outline: none;
+					float: left;
+					"></div>
+					<div><input type="submit" id="start_download" value="download!"
+						style="color: #333;
+						background-color: #fff;
+						border-color: #fff;
+						display: inline-block;
+						padding: 6px 12px;
+						margin-bottom: 0;
+						font-size: 14px;
+						font-weight: normal;
+						line-height: 1.42857143;
+						text-align: center;
+						white-space: nowrap;
+						vertical-align: middle;
+						-ms-touch-action: manipulation;
+								touch-action: manipulation;
+						cursor: pointer;
+						-webkit-user-select: none;
+							 -moz-user-select: none;
+								-ms-user-select: none;
+										user-select: none;
+						background-image: none;
+						border: 1px solid #337ab7;
+						border-radius: 4px;
+						outline: none;
+						float: right;
+						"></div>
+						<div style="clear: right;"></div>
+			</div>
+		</div>
+
+
+		<!-- JavaScript -->
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/options.js"></script>
+
+	</body>
+
+</html>
